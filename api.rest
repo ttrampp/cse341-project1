@@ -1,0 +1,44 @@
+### GET all contacts
+GET http://localhost:3000/contacts
+
+###
+
+### POST a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+  {
+    "_id": "682201d7a2149ca1b5562ebe",
+    "firstName": "Morgan",
+    "lastName": "Trampp",
+    "email": "morgan@example.com",
+    "favoriteColor": "Green",
+    "birthday": "2005-01-11"
+  },
+  {
+    "_id": "68220217a2149ca1b5562ebf",
+    "firstName": "August",
+    "lastName": "Trampp",
+    "email": "august@example.com",
+    "favoriteColor": "Blue",
+    "birthday": "2011-08-14"
+  },
+  {
+    "_id": "68220256a2149ca1b5562ec0",
+    "firstName": "Adam",
+    "lastName": "Trampp",
+    "email": "adam@example.com",
+    "favoriteColor": "Orange",
+    "birthday": "2011-12-14"
+  }
+
+###
+
+### GET only one contact by ID
+GET http://localhost:3000/contacts/682201d7a2149ca1b5562ebe
+
+###
+
+### DELETE only one contact by ID
+DELETE http://localhost:3000/contacts/682201d7a2149ca1b5562ebe
+
