@@ -1,15 +1,19 @@
+@local = http://localhost:3000
+@production = https://cse341-project1-0ktq.onrender.com 
+
+########LOCAL########
 ### GET all contacts
-GET http://localhost:3000/contacts
+GET {{local}}/contacts
 
 ###
 
 ### GET a contact by ID
-GET http://localhost:3000/contacts/68226c44eddb4c6795299834
+GET {{local}}/contacts/68226c44eddb4c6795299834
 
 ###
 
 ### POST --CREATE a new contact
-POST http://localhost:3000/contacts
+POST {{local}}/contacts
 Content-Type: application/json
 
 {
@@ -23,7 +27,7 @@ Content-Type: application/json
 ###
 
 ### PUT --UPDATE contact
-PUT http://localhost:3000/contacts/68226c44eddb4c6795299834
+PUT {{local}}/contacts/68226c44eddb4c6795299834
 Content-Type: application/json
 
 {
@@ -37,4 +41,55 @@ Content-Type: application/json
 ###
 
 ### DELETE only one contact by ID
-DELETE http://localhost:3000/contacts/682282f3bd2efdaa8e10dff4
+DELETE {{local}}/contacts/682282f3bd2efdaa8e10dff4
+
+
+
+
+
+###############################################################################################################################
+###############################################################################################################################
+###############################################################################################################################
+
+
+########PRODUCTION########
+### GET all contacts
+GET {{production}}/contacts
+
+###
+
+### GET a contact by ID
+GET {{production}}/contacts/68226c44eddb4c6795299834
+
+###
+
+### POST --CREATE a new contact
+POST {{production}}/contacts
+Content-Type: application/json
+
+{
+"firstName": "Liz",
+"lastName": "Bautista",
+"email": "liz@example.com",
+"favoriteColor": "Purple",
+"birthday": "1991-08-19"
+}
+
+###
+
+### PUT --UPDATE contact
+PUT {{production}}/contacts/68226c44eddb4c6795299834
+Content-Type: application/json
+
+{
+"firstName": "Morgan",
+"lastName": "Trampp",
+"email": "morgan@example.com",
+"favoriteColor": "Dark Green",
+"birthday": "2005-01-11"
+}
+
+###
+
+### DELETE only one contact by ID
+DELETE {{production}}/contacts/682282f3bd2efdaa8e10dff4
