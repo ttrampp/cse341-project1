@@ -92,4 +92,4 @@ Content-Type: application/json
 ###
 
 ### DELETE only one contact by ID
-DELETE {{production}}/contacts/682282f3bd2efdaa8e10dff4
+DELETE {{production}}/contacts/682296a088bf0c13ebdb8385
